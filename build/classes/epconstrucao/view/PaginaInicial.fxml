@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epconstrucao.controller.PaginaInicialController">
+    <stylesheets>
+        <URL value="@/epconstrucao/content/loja.css"/>
+              <JFXButton fx:id="entrarButton" layoutX="1085.0" layoutY="379.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: orange;" text="ENTRAR" />
+    </stylesheets>
+</AnchorPane>
