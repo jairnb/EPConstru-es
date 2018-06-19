@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="830.0" prefWidth="1450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epconstrucao.controller.TelaClienteController">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="1450.0" style="-fx-background-color: white; -fx-border-width: 0 0 4 0; -fx-border-color: gray;">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="216.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/minilogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ed9d14" layoutX="1255.0" layoutY="48.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Administrador" wrappingWidth="180.359619140625" />
+         </children>
+      </Pane>
+      <Pane layoutY="66.0" prefHeight="764.0" prefWidth="216.0" style="-fx-background-color: #ed9d14;">
+         <children>
+            <JFXButton layoutY="1.0" prefHeight="57.0" prefWidth="216.0" text="Cliente" textFill="WHITE" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ISVU3050.PNG" />
+               </image></ImageView>
+            <JFXButton layoutY="115.0" prefHeight="57.0" prefWidth="216.0" text="Fornecedor" textFill="WHITE" />
+            <JFXButton layoutY="58.0" prefHeight="57.0" prefWidth="216.0" text="Funcionario" textFill="WHITE" />
+            <JFXButton layoutY="229.0" prefHeight="57.0" prefWidth="216.0" text="Venda" textFill="WHITE" />
+            <JFXButton layoutY="286.0" prefHeight="57.0" prefWidth="216.0" text="Utilizadores" textFill="WHITE" />
+            <JFXButton layoutY="172.0" prefHeight="57.0" prefWidth="216.0" text="Material" textFill="WHITE" />
+            <JFXButton layoutY="388.0" prefHeight="57.0" prefWidth="216.0" text="Voltar" textFill="WHITE" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/UHYY5653.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/HMRG0616.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/DKFZ7969.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user_icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ATYA3017.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/RUNZ3430.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnApagar" layoutX="1322.0" layoutY="84.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: red;" text="Apagar" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/LSDM8845.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnAdicionar" layoutX="883.0" layoutY="84.0" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: green;" text="Adicionar Cliente" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/EIXG5551.PNG" />
+               </image></ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnEditar" layoutX="1214.0" layoutY="84.0" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: black;" text="Editar" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/KHAP7587.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnDetalhes" layoutX="1078.0" layoutY="84.0" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: gray;" text="Detalhes" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/MKPD3903.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView layoutX="243.0" layoutY="162.0" prefHeight="628.0" prefWidth="1180.0">
+        <columns>
+          <TableColumn prefWidth="499.0" text="Id Cliente" />
+          <TableColumn prefWidth="596.0" text="Nome Cliente" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="722.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epconstrucao.controller.TelaClienteController">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="1381.0" style="-fx-background-color: white; -fx-border-width: 0 0 4 0; -fx-border-color: gray;">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="216.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/minilogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ed9d14" layoutX="1199.0" layoutY="42.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Administrador" wrappingWidth="180.359619140625" />
+         </children>
+      </Pane>
+      <Pane layoutY="66.0" prefHeight="657.0" prefWidth="216.0" style="-fx-background-color: #ed9d14;">
+         <children>
+            <Text fill="WHITE" layoutX="102.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Cliente" wrappingWidth="65.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/DROG6420.PNG" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Funcionario" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="25.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/UHYY5653.PNG" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Fornecedor" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="31.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/HMRG0616.PNG" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Material" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="25.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/DKFZ7969.PNG" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Venda" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="25.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ATYA3017.PNG" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Utilizadores" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="22.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user_icon.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Voltar" wrappingWidth="101.81298828125" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="29.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/RUNZ3430.PNG" />
+               </image>
+            </ImageView>
+            <JFXButton ellipsisString="" opacity="0.28" prefHeight="59.0" prefWidth="216.0" ripplerFill="#6e4504" style="-fx-background-color: #6e4504;" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutY="54.0" prefHeight="59.0" prefWidth="216.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutY="107.0" prefHeight="43.0" prefWidth="216.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutY="156.0" prefHeight="48.0" prefWidth="216.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutY="201.0" prefHeight="48.0" prefWidth="216.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutY="245.0" prefHeight="59.0" prefWidth="216.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+            <JFXButton ellipsisString="" layoutX="6.0" layoutY="346.0" prefHeight="66.0" prefWidth="210.0" ripplerFill="#6e4504" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+         </children>
+      </Pane>
+      <JFXButton layoutX="1259.0" layoutY="84.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: red;" text="Apagar" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/LSDM8845.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="850.0" layoutY="84.0" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: green;" text="Adicionar Cliente" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/EIXG5551.PNG" />
+               </image></ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="1159.0" layoutY="84.0" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: black;" text="Editar" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/KHAP7587.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="1033.0" layoutY="84.0" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: gray;" text="Detalhes" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/MKPD3903.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView layoutX="266.0" layoutY="162.0" prefHeight="461.0" prefWidth="1096.0">
+        <columns>
+          <TableColumn prefWidth="499.0" text="Id Cliente" />
+          <TableColumn prefWidth="596.0" text="Nome Cliente" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

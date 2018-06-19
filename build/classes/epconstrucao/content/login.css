@@ -1,7 +1,8 @@
-/*
- * Empty Stylesheet file.
- */
 
-.mainFxmlClass {
-
-}
+ #loginAnchorPane
+    {
+     -fx-background-image: url("../..//epconstrucao/image/login.png");
+    
+        
+    }
+    

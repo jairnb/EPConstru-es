@@ -7,7 +7,9 @@ package epconstrucao.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.Pane;
 
 /**
  * FXML Controller class
@@ -16,11 +18,21 @@ import javafx.fxml.Initializable;
  */
 public class PaginaInicialAdminController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    private Pane tela;
+         
+     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        
+    
+         
+         
+         
+         
+         
+         
         // TODO
     }    
     

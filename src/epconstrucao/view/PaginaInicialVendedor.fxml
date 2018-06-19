@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,11 +10,59 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="epconstrucao.controller.PaginaInicialVendedorController">
+<AnchorPane id="AnchorPane" prefHeight="830.0" prefWidth="1480.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epconstrucao.controller.PaginaInicialVendedorController">
     <stylesheets>
         <URL value="@/epconstrucao/content/login.css" />
     </stylesheets>
    <children>
-      <Button layoutX="119.0" layoutY="152.0" mnemonicParsing="false" text="Vendedor TESTE" />
+      <ImageView fitHeight="138.0" fitWidth="274.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/minilogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ed9d14" layoutX="645.0" layoutY="65.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 25;" text="MENU PRINCIPAL" wrappingWidth="268.359619140625" />
+      <Text fill="#ed9d14" layoutX="1293.0" layoutY="80.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Atendente" wrappingWidth="129.359619140625" />
+      <ImageView fitHeight="79.0" fitWidth="1437.0" layoutX="22.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/IMG_E3036.JPG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="163.0" layoutY="349.0" prefHeight="167.0" prefWidth="252.0" style="-fx-background-color: #ed9d14;">
+         <children>
+            <Pane layoutY="127.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-color: #ce8711;" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Cliente" wrappingWidth="69.81298828125" />
+            <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="138.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/DROG6420.PNG" />
+               </image>
+            </ImageView>
+            <JFXButton ellipsisString="" prefHeight="167.0" prefWidth="252.0" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="600.0" layoutY="349.0" prefHeight="167.0" prefWidth="252.0" style="-fx-background-color: #ed9d14;">
+         <children>
+            <Pane layoutY="127.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-color: #ce8711;" />
+            <Text fill="WHITE" layoutX="43.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Venda" wrappingWidth="68.34375" />
+            <ImageView fitHeight="77.0" fitWidth="91.0" layoutX="141.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ATYA3017.PNG" />
+               </image>
+            </ImageView>
+            <JFXButton ellipsisString="" layoutY="-2.0" prefHeight="167.0" prefWidth="252.0" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="1041.0" layoutY="353.0" prefHeight="167.0" prefWidth="252.0" style="-fx-background-color: #ed9d14;">
+         <children>
+            <Pane layoutY="127.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-color: #ce8711;" />
+            <Text fill="WHITE" layoutX="51.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Sair" wrappingWidth="68.34375" />
+            <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="138.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/YAOA0155.PNG" />
+               </image>
+            </ImageView>
+            <JFXButton ellipsisString="" layoutY="5.0" prefHeight="167.0" prefWidth="252.0" text="." textFill="#ed9d14" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutY="766.0" prefHeight="81.0" prefWidth="1467.0" style="-fx-background-color: #ed9d14;" />
    </children>
 </AnchorPane>

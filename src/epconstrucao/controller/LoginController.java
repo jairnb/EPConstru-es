@@ -5,6 +5,9 @@
  */
 package epconstrucao.controller;
 
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.validation.RequiredFieldValidator;
 import epconstrucao.model.dao.UtilizadorDAO;
 import epconstrucao.model.database.Database;
 import epconstrucao.model.database.DatabaseFactory;
@@ -15,13 +18,17 @@ import java.sql.Connection;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javax.swing.JOptionPane;
 
 /**
@@ -31,14 +38,28 @@ import javax.swing.JOptionPane;
  */
 public class LoginController implements Initializable {
 
-    @FXML 
+    @FXML
     private AnchorPane loginAnchorPane;
+    
     @FXML
-    private TextField nomeTextField;    
+    private JFXTextField nomeTextField;
+    
     @FXML
-    private TextField senhaTextFiled;
+    private JFXPasswordField senhaTextField;
+      
     @FXML
     private Button entrarButton;
+    
+    @FXML
+    private ImageView imgLogin;
+    
+    
+    
+    
+    
+    
+   
+    
     
     private final UtilizadorDAO utilizadorDAO = new UtilizadorDAO();
     private Utilizador utilizador = new Utilizador();
@@ -49,6 +70,42 @@ public class LoginController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+//Inicio de validacao de campo*****************************************************************************************
+       RequiredFieldValidator validator = new RequiredFieldValidator();
+       
+       nomeTextField.getValidators().add(validator);
+       validator.setMessage("Os campos nao podem ser vazios");
+       
+       nomeTextField.focusedProperty().addListener(new ChangeListener<Boolean>(){
+            
+           @Override
+           public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+               if(!newValue){
+                   nomeTextField.validate();
+               }
+           }
+       });
+       
+       
+       senhaTextField.getValidators().add(validator);
+       validator.setMessage("Os campos nao podem ser vazios");
+       
+       senhaTextField.focusedProperty().addListener(new ChangeListener<Boolean>(){
+            
+           @Override
+           public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+               if(!newValue){
+                   senhaTextField.validate();
+               }
+           }
+       });
+       
+//FIM DE VALIDACAO DE CAMPO*******************************************************************
+        
+        
+        
+        
         utilizadorDAO.setConexao(conexao);
         
         entrarButton.setOnMouseClicked((MouseEvent e) -> {
@@ -58,13 +115,27 @@ public class LoginController implements Initializable {
                 Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
+        
+        
+         
+         
+         
+         
+        
+             
+        
     }    
     
     
     public void login() throws IOException{
         Utilizador utilizadorForm = new Utilizador();
         utilizadorForm.setNome( nomeTextField.getText());
-        utilizadorForm.setSenha(senhaTextFiled.getText());
+        utilizadorForm.setSenha(senhaTextField.getText());
+        
+       
+       
+        
+        
         
         utilizador = utilizadorDAO.SelecionarUsuario(utilizadorForm);
         
